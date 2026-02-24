@@ -6,7 +6,6 @@ package prog2.model;
  * @author lauraigual
  */
 public interface InAllotjament {
-
     /**
      * Obté el nom de l'allotjament.
      * @return el nom de l'allotjament.
