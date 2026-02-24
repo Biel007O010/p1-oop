@@ -8,9 +8,9 @@ public class Camping implements InCamping{
     //Creació de totes les variables privades de la classe.
 
     private String nom;
-    private ArrayList<InAllotjament> allotjamentsDisp;
-    private ArrayList<InClient> clients;
-    private ArrayList<InReserva> reserves;
+    private ArrayList<Allotjament> allotjamentsDisp;
+    private ArrayList<Client> clients;
+    private InLlistaReserves reserves;
 
     //Creem el constructor
 
