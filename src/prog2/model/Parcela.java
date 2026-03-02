@@ -6,7 +6,7 @@ public class Parcela extends Allotjament{
     boolean connexioElectrica;
 
     public Parcela(String nom_, String idAllotjament_, float metres, boolean connexioElectrica){
-        super(nom_, idAllotjament_, 2, 8);
+        super(nom_, idAllotjament_, 4, 2);
         this.metres = metres;
         this.connexioElectrica = connexioElectrica;
     };
