@@ -15,6 +15,6 @@ public class BungalowPremium extends Bungalow{
     }
     @Override
     public boolean correcteFuncionament(){
-        return super.correcteFuncionament() && serveisExtra;
+        return super.correcteFuncionament() && (codiWifi.length() > 8 && codiWifi.length() < 16);
     }
 }

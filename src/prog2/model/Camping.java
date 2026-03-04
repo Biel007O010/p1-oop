@@ -124,7 +124,6 @@ public class Camping implements InCamping{
         }
         reserves.afegirReserva(allotjamentSolicitat, clientReserva, dataEntrada, dataSortida);
 
-
     }
 
     @Override

@@ -8,7 +8,7 @@ public class Bungalow extends Casa{
     private boolean aireFred;
 
     public Bungalow(String nom_, String id_, String mida, int habitacions, int placesPersones,
-                        int placesParquing_, boolean terrassa_, boolean tv_, boolean aireFred_){
+                    int placesParquing_, boolean terrassa_, boolean tv_, boolean aireFred_){
 
         super(nom_, id_, mida, habitacions, placesPersones, 7, 4);
         this.placesParquing = placesParquing_;
@@ -19,7 +19,6 @@ public class Bungalow extends Casa{
     @Override
     public boolean correcteFuncionament(){
 
-        return terrassa && tv && aireFred;
+        return aireFred;
     }
-
 }
