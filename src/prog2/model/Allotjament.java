@@ -17,11 +17,11 @@ public abstract class Allotjament implements InAllotjament{
 
     public String getNom(){return nom;};
 
-    public void setNom(String nom){nom = nom;};
+    public void setNom(String nom){this.nom = nom;};
 
     public String getId(){return id;};
 
-    public void setId(String id){id = id;};
+    public void setId(String id){this.id = id;};
 
     public long getEstadaMinima(InAllotjament.Temp temp){
         if (temp.equals(Temp.ALTA)){
@@ -35,4 +35,9 @@ public abstract class Allotjament implements InAllotjament{
         estadaMinimaALTA = estadaMinimaALTA_;
         estadaMinimaBAIXA = estadaMinimaBAIXA_;
     };
+
+    @Override
+    public String toString() {
+        return "Nom= " + nom + " Id= " + id + " estada mínima en temp ALTA: " + estadaMinimaALTA + " estada mínima en temp BAIXA: " + estadaMinimaBAIXA;
+    }
 }

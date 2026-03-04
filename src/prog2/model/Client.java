@@ -14,8 +14,13 @@ public class Client implements InClient{
 
     public String getDni(){return dni;};
 
-    public void setNom(String nom){nom = nom;};
+    public void setNom(String nom){this.nom = nom;};
 
-    public void setDni(String dni){dni = dni;};
+    public void setDni(String dni){this.dni = dni;};
+
+    @Override
+    public String toString(){
+        return nom + " amb DNI: " + dni + ". ";
+    }
 
 }

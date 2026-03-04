@@ -21,4 +21,5 @@ public class Bungalow extends Casa{
 
         return terrassa && tv && aireFred;
     }
+
 }

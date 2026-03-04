@@ -3,7 +3,7 @@ package prog2.model;
 public class Parcela extends Allotjament{
 
     private float metres;
-    boolean connexioElectrica;
+    private boolean connexioElectrica;
 
     public Parcela(String nom_, String idAllotjament_, float metres, boolean connexioElectrica){
         super(nom_, idAllotjament_, 4, 2);
@@ -13,4 +13,23 @@ public class Parcela extends Allotjament{
 
     public boolean correcteFuncionament(){return connexioElectrica;
     };
+
+    public void setConnexioElectrica(boolean b) {
+        this.connexioElectrica = b;
+    }
+
+    public boolean isConnexioElectrica() {
+        if (connexioElectrica){
+            return true;
+        }
+        return false;
+    }
+
+    public float getMida() {
+        return this.metres;
+    }
+
+    public void setMida(float v) {
+        this.metres = v;
+    }
 }
