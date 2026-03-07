@@ -110,20 +110,10 @@ public class Camping implements InCamping{
 
     @Override
     public void afegirReserva(String id_, String dni_, LocalDate dataEntrada, LocalDate dataSortida) throws ExcepcioReserva {
-        Client clientReserva = null;
-        try {
-            clientReserva = buscarClient(dni_);
-        } catch (ExcepcioReserva e) {
-            System.out.println(e.getMessage());
-        }
-        Allotjament allotjamentSolicitat = null;
-        try {
-            allotjamentSolicitat = buscarAllotjament(id_);
-        } catch (ExcepcioReserva r) {
-            System.out.println(r.getMessage());
-        }
-        reserves.afegirReserva(allotjamentSolicitat, clientReserva, dataEntrada, dataSortida);
+        Client clientReserva = buscarClient(dni_);
+        Allotjament allotjamentSolicitat = buscarAllotjament(id_);
 
+        reserves.afegirReserva(allotjamentSolicitat, clientReserva, dataEntrada, dataSortida);
     }
 
     @Override
