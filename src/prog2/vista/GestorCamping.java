@@ -229,7 +229,7 @@ public class GestorCamping {
         try{
             camping.afegirReserva(idAllotjament, dni, entrada, sortida);
         } catch (ExcepcioReserva e) {
-            throw new RuntimeException(e);
+            System.out.println("Error: " + e.getMessage());
         }
 
         // 2. Afegeix una reserva pel client amb DNI "78659101A" de l'allotjament amb identificador "100P"
@@ -249,7 +249,7 @@ public class GestorCamping {
         try{
             camping.afegirReserva(idAllotjament, dni, entrada, sortida);
         } catch (ExcepcioReserva e) {
-            throw new RuntimeException(e);
+           System.out.println("Error: " + e.getMessage());
         }
            
         // 3. Afegeix una reserva pel client amb DNI "789101A" de l'allotjament amb identificador "300Z"
@@ -269,7 +269,7 @@ public class GestorCamping {
         try{
             camping.afegirReserva(idAllotjament, dni, entrada, sortida);
         } catch (ExcepcioReserva e) {
-            throw new RuntimeException(e);
+            System.out.println("Error: " + e.getMessage());
         }
         
     }
